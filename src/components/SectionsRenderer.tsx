@@ -268,16 +268,28 @@ function GallerySection({ content }: SectionProps) {
           )}
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
-          {items.slice(0, 8).map((img: any, i: number) => (
-            <div key={i} style={{ aspectRatio: '1', background: '#e5e7eb', borderRadius: '0.75rem', overflow: 'hidden', position: 'relative' }}>
-              <img src={img.url || img.src || `https://picsum.photos/400/400?random=${i}`}
-                alt={img.caption || img.alt || 'Experiencia spa'}
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-              {img.caption && (
-                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '1rem', background: 'linear-gradient(transparent, rgba(0,0,0,0.8))', color: 'white', fontSize: '0.875rem' }}>
-                  {img.caption}
-                </div>
-              )}
+          {items.map((img: any, i: number) => (
+            <div key={i} style={{ aspectRatio: '1', background: '#e5e7eb', borderRadius: '0.75rem', overflow: 'hidden', position: 'relative', cursor: 'pointer', transition: 'transform 0.3s ease' }}>
+              <img 
+                src={img.src || img.url || `https://picsum.photos/400/400?random=${i}`}
+                alt={img.alt || img.caption || 'Experiencia spa'}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s ease' }}
+              />
+              <div style={{ 
+                position: 'absolute', 
+                bottom: 0, 
+                left: 0, 
+                right: 0, 
+                padding: '1rem', 
+                background: 'linear-gradient(transparent, rgba(46, 139, 130, 0.9))', 
+                color: 'white', 
+                fontSize: '0.875rem',
+                opacity: 0,
+                transition: 'opacity 0.3s ease'
+              }}
+              >
+                {img.caption}
+              </div>
             </div>
           ))}
         </div>
@@ -332,23 +344,25 @@ function FAQSection({ content }: SectionProps) {
   const faq = content?.faq;
   const items = faq?.items || [];
   return (
-    <section style={{ padding: '5rem 2rem', background: 'white' }}>
-      <div style={{ maxWidth: '48rem', margin: '0 auto' }}>
+    <section id="faq" style={{ padding: '5rem 2rem', background: 'white' }}>
+      <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           {faq?.title && (
             <>
-              <p style={{ color: '#4ECDC4', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>FAQ</p>
-              <h2 style={{ fontSize: '2.25rem', fontWeight: 700, fontFamily: 'Georgia, serif', color: '#2E8B82' }}>{faq.title}</h2>
+              <p style={{ color: '#4ECDC4', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>Preguntas Frecuentes</p>
+              <h2 style={{ fontSize: '2.25rem', fontWeight: 700, fontFamily: 'Georgia, serif', color: '#2E8B82', marginBottom: '1rem' }}>{faq.title}</h2>
+              {faq?.subtitle && <p style={{ color: '#6b7280', fontSize: '1.125rem', maxWidth: '42rem', margin: '0 auto' }}>{faq.subtitle}</p>}
             </>
           )}
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          {items.slice(0, 8).map((item: any, i: number) => (
-            <details key={i} style={{ background: '#F7FFF7', borderRadius: '0.75rem', border: '2px solid #E8F8F5', overflow: 'hidden' }}>
-              <summary style={{ padding: '1.25rem', fontWeight: 600, color: '#2E8B82', cursor: 'pointer', listStyle: 'none', display: 'flex', justifyContent: 'space-between' }}>
-                {item.question || item.q || item.title} <span style={{ color: '#4ECDC4' }}>▾</span>
+          {items.map((item: any, i: number) => (
+            <details key={i} style={{ background: '#F7FFF7', borderRadius: '0.75rem', border: '2px solid #E8F8F5', overflow: 'hidden', transition: 'all 0.3s ease' }}>
+              <summary style={{ padding: '1.25rem', fontWeight: 600, color: '#2E8B82', cursor: 'pointer', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <span style={{ flex: 1 }}>{item.question || item.q || item.title}</span>
+                <span style={{ color: '#4ECDC4', fontSize: '1.25rem', marginLeft: '1rem' }}>+</span>
               </summary>
-              <div style={{ padding: '0 1.25rem 1.25rem', color: '#6b7280', lineHeight: 1.6 }}>
+              <div style={{ padding: '0 1.25rem 1.25rem', color: '#6b7280', lineHeight: 1.6, borderTop: '1px solid #E8F8F5', paddingTop: '1rem' }}>
                 {item.answer || item.a || item.description || ''}
               </div>
             </details>
