@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { SchemaMarkup, generateFAQSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Preguntas Frecuentes | HidroBaby Spa - FAQ Completo',
@@ -6,5 +7,14 @@ export const metadata: Metadata = {
 };
 
 export default function FAQLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  const schema = generateFAQSchema();
+
+  return (
+    <>
+      <head>
+        <SchemaMarkup schema={schema} />
+      </head>
+      {children}
+    </>
+  );
 }
