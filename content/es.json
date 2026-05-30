@@ -1,0 +1,186 @@
+{
+  "_meta": {
+    "translationQuality": "native",
+    "author": "ParaguAI / Ai-Whisperers",
+    "lastReviewed": "2026-05-28",
+    "version": "1.0"
+  },
+  "site": {
+    "name": "HidroBaby Spa",
+    "shortName": "HidroBaby",
+    "businessName": "HidroBaby Spa",
+    "tagline": "Baby Spa en Fernando de la Mora — Atención profesional",
+    "description": "HidroBaby Spa. Baby Spa en Fernando de la Mora, Paraguay. Atención profesional y personalizada.",
+    "phone": "+595 993 444 222",
+    "whatsapp": "595993444222",
+    "email": "",
+    "address": "Fernando de la Mora, Paraguay",
+    "city": "Fernando de la Mora",
+    "country": "Paraguay",
+    "hours": "Lunes a Sábado 9:00–18:00 hs"
+  },
+  "navigation": {
+    "businessName": "HidroBaby Spa",
+    "items": [
+      {
+        "label": "Servicios",
+        "href": "#servicios"
+      },
+      {
+        "label": "Paquetes",
+        "href": "#paquetes"
+      },
+      {
+        "label": "Galería",
+        "href": "#galeria"
+      },
+      {
+        "label": "Contacto",
+        "href": "#contacto"
+      }
+    ]
+  },
+  "hero": {
+    "headline": "HidroBaby Spa",
+    "subheadline": "Baby Spa",
+    "description": "HidroBaby Spa — Baby Spa en Fernando de la Mora. Atención profesional.",
+    "ctaPrimaryText": "Reservar por WhatsApp"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "items": [
+      {
+        "title": "Baño de inmersión para bebés",
+        "description": "Sesiones seguras de hidroterapia para bebés desde los 2 meses. Agua templada, certificada y controlada. Ambiente esterilizado con temperatura ideal.",
+        "price": "Gs. 45.000",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Masajes pediátricos",
+        "description": "Técnicas de masaje infantil que favorecen el sueño, la digestión y el vínculo afectivo. Realizados por fisioterapeutas especializados.",
+        "price": "Gs. 50.000",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Clases de natación temprana",
+        "description": "Introducción al agua en un entorno seguro y divertido. Desarrolla confianza, coordinación y reflejos acuáticos desde el primer año.",
+        "price": "Gs. 60.000",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Spa sensorial infantil",
+        "description": "Experiencia multisensorial con luces, sonidos y texturas adaptadas al desarrollo neurológico del bebé. Ideal para estimulación temprana.",
+        "price": "Gs. 55.000",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Fisioterapia acuática",
+        "description": "Rehabilitación en agua para bebés con hipotonía, tortícolis o prematurez. Programas diseñados por kinesiólogos pediátricos.",
+        "price": "Gs. 70.000",
+        "icon": "sparkles"
+      }
+    ]
+  },
+  "packages": {
+    "title": "Paquetes Especiales",
+    "description": "Combina servicios y ahorra en experiencias completas para tu bebé.",
+    "items": [
+      {
+        "name": "Pack Bienestar",
+        "description": "Sesión de inmersión + masaje pediátrico + spa sensorial",
+        "services": ["Baño de inmersión (30 min)", "Masaje pediátrico (20 min)", "Spa sensorial (15 min)"],
+        "originalPrice": 150000,
+        "price": 120000,
+        "savings": 30000,
+        "badge": "Popular"
+      },
+      {
+        "name": "Pack Explorador",
+        "description": "Clase de natación + fisioterapia acuática + seguimiento",
+        "services": ["Natación temprana (45 min)", "Fisioterapia acuática (30 min)", "Reporte de progreso"],
+        "originalPrice": 200000,
+        "price": 165000,
+        "savings": 35000
+      },
+      {
+        "name": "Pack Premium",
+        "description": "Experiencia completa con todos los servicios + atención exclusiva",
+        "services": ["Todos los servicios incluidos", "Sesión individual (90 min)", "Atención prioritaria", "Reporte detallado"],
+        "originalPrice": 350000,
+        "price": 280000,
+        "savings": 70000,
+        "badge": "Mejor valor"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galería",
+    "items": [
+      "Trabajo 1",
+      "Trabajo 2",
+      "Trabajo 3",
+      "Trabajo 4",
+      "Trabajo 5",
+      "Trabajo 6"
+    ]
+  },
+  "promos": {
+    "items": [
+      {
+        "title": "🎉 Primera Sesión GRATIS",
+        "description": "Prueba cualquiera de nuestros servicios sin costo",
+        "ctaText": "Reservar ahora",
+        "ctaLink": "https://wa.me/595993444222?text=Hola!%20Quiero%20mi%20primera%20sesión%20gratis",
+        "bgColor": "#4ECDC4"
+      },
+      {
+        "title": "💎 Pack Familiar -20%",
+        "description": "2 o más hermanos descuento en paquete completo",
+        "ctaText": "Ver detalles",
+        "ctaLink": "#paquetes",
+        "bgColor": "#FFE66D"
+      },
+      {
+        "title": "🚑 Fisioterapia Prioritaria",
+        "description": "Atención inmediata para bebés con hipotonía o tortícolis",
+        "ctaText": "Agendar urgente",
+        "ctaLink": "https://wa.me/595993444222?text=Hola!%20Necesito%20fisioterapia%20de%20urgencia",
+        "bgColor": "#FF6B6B"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen las familias",
+    "items": [
+      {
+        "name": "María González",
+        "text": "Mi bebé de 6 meses ama las sesiones de inmersión. El equipo es super profesional y el ambiente es perfecto. Totalmente recomendado.",
+        "rating": 5
+      },
+      {
+        "name": "Carla Rodríguez",
+        "text": "El masaje pediátrico ayudó mucho con la digestión de mi hija. Ahora duerme mucho mejor. Gracias por el cuidado!",
+        "rating": 5
+      },
+      {
+        "name": "Ana López",
+        "text": "La natación temprana es increíble. Mi hijo perdió el miedo al agua y aprendió coordinación rápidamente.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Reserva tu cita en HidroBaby Spa.",
+    "cta": {
+      "text": "+595 993 444 222",
+      "label": "WhatsApp"
+    },
+    "whatsappMessage": "¡Hola! Vi la página de HidroBaby Spa y me gustaría reservar una cita. ¿Podés confirmarme disponibilidad?"
+  },
+  "footer": {
+    "businessName": "HidroBaby Spa",
+    "tagline": "© 2026 HidroBaby Spa. Todos los derechos reservados.",
+    "credits": "Hecho con ❤️ por ParaguAI"
+  }
+}
