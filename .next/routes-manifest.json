@@ -21,16 +21,34 @@
   "dynamicRoutes": [],
   "staticRoutes": [
     {
-      "page": "/",
-      "regex": "^/(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/(?:/)?$"
-    },
-    {
       "page": "/_not-found",
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/faq",
+      "regex": "^/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/faq(?:/)?$"
+    },
+    {
+      "page": "/fiestas",
+      "regex": "^/fiestas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/fiestas(?:/)?$"
+    },
+    {
+      "page": "/nosotros",
+      "regex": "^/nosotros(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/nosotros(?:/)?$"
+    },
+    {
+      "page": "/precios",
+      "regex": "^/precios(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/precios(?:/)?$"
     }
   ],
   "dataRoutes": [],
